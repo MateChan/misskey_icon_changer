@@ -34,7 +34,6 @@ async function task() {
   });
   const images = files.filter((file) => file.type.includes("image/"));
   const idx = Math.floor(Date.now() / 1000 / 60 / 60 / 24) % images.length;
-  console.log(images);
 
   mk.request("i/update", { avatarId: images[idx].id });
 }
