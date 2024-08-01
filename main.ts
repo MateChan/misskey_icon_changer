@@ -38,4 +38,4 @@ async function task() {
   mk.request("i/update", { avatarId: images[idx].id });
 }
 
-Deno.cron("change icon", "0 0 * * *", task);
+Deno.cron("change icon", "0 17 * * *", task);
